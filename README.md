@@ -1,33 +1,34 @@
-🎬 Sistema de Recomendación de Películas
+**Sistema de Recomendación de Películas**
 
 Sistema web de recomendación de películas que genera sugerencias personalizadas a partir de las preferencias del usuario. El proyecto combina una aplicación web desarrollada con Python y HTML con técnicas de aprendizaje no supervisado y datos obtenidos de The Movie Database (TMDB).
 
-📌 Descripción
+**Descripción**
 
 El objetivo de este proyecto es desarrollar una plataforma capaz de recomendar películas adaptándose a los gustos de cada usuario.
 
 La aplicación permitirá al usuario indicar sus preferencias de diferentes formas, por ejemplo:
 
-🎯 Seleccionando características o preferencias cinematográficas.
+- Seleccionando características o preferencias cinematográficas
 
-⭐ Indicando una película que le haya gustado.
+- Indicando una película que le haya gustado.
 
-🎬 Introduciendo una lista de películas que le hayan gustado.
+- Introduciendo una lista de películas que le hayan gustado.
 
-🔎 Obteniendo recomendaciones basadas en las películas seleccionadas.
+- Obteniendo recomendaciones basadas en las películas seleccionadas.
 
 A partir de esta información, el sistema analizará las características de las películas y buscará otras similares que puedan resultar interesantes para el usuario.
 
 El modelo de recomendación será de tipo no supervisado. La técnica concreta todavía está en fase de estudio y se determinará durante el desarrollo del proyecto.
 
-✨ Funcionalidades
-🎥 Recomendación basada en películas
+**Funcionalidades**
+
+1. Recomendación basada en películas
 
 El usuario podrá introducir una o varias películas que le hayan gustado.
 
 El sistema utilizará esa información para encontrar películas con características similares y generar una lista de recomendaciones.
 
-🎯 Recomendación basada en preferencias
+ 2. Recomendación basada en preferencias
 
 El usuario podrá definir sus preferencias cinematográficas para obtener recomendaciones personalizadas.
 
@@ -37,7 +38,7 @@ Géneros, Actores, Directores, Palabras clave, Año de lanzamiento, Valoración,
 
 Otras características disponibles en los datos de TMDB
 
-🔍 Información de las películas
+3. Información de las películas
 
 Las películas mostradas podrán incluir información como:
 
@@ -45,7 +46,7 @@ Título, Póster, Sinopsis, Géneros, Fecha de estreno, Valoración, Popularidad
 
 La información se obtendrá mediante la API de The Movie Database.
 
-🤖 Sistema de recomendación
+3. Sistema de recomendación
 
 El proyecto utilizará un algoritmo de aprendizaje no supervisado para encontrar relaciones y similitudes entre películas.
 
@@ -55,44 +56,44 @@ Algunas técnicas que podrían estudiarse son:
 
 K-Means, Clustering jerárquico, DBSCAN, Técnicas de reducción de dimensionalidad
 
-⚠️ Nota: estas técnicas son posibilidades a estudiar y no representan todavía la implementación definitiva del proyecto.
+· Nota: estas técnicas son posibilidades a estudiar y no representan todavía la implementación definitiva del proyecto.
 
-🌐 Aplicación web
+**Aplicación web**
 
 La aplicación estará desarrollada utilizando principalmente:
 
 Tecnología	Uso
-🐍 Python	Lógica de la aplicación y sistema de recomendación
-🌐 HTML	Estructura de las páginas web
-🎨 CSS	Diseño y estilos de la interfaz
-🎬 TMDB API	Obtención de información sobre películas
-🤖 Cohere API	Integración futura de funcionalidades basadas en IA (posiblemente)
+- Python	Lógica de la aplicación y sistema de recomendación
+- HTML	Estructura de las páginas web
+- CSS	Diseño y estilos de la interfaz
+- TMDB API	Obtención de información sobre películas
+- Cohere API	Integración futura de funcionalidades basadas en IA (posiblemente)
 
 El framework web de Python se determinará durante el desarrollo del proyecto.
 
-🧠 Posible integración de IA
+**Posible integración de IA**
 
 Como funcionalidad futura, se plantea integrar la API de Cohere para añadir funcionalidades basadas en inteligencia artificial.
 
 Esta integración todavía se encuentra en fase de planificación. Algunas posibilidades que se estudiarán son:
 
-💬 Permitir recomendaciones mediante lenguaje natural.
+- Permitir recomendaciones mediante lenguaje natural.
 
-📝 Analizar las preferencias escritas por el usuario.
+- Analizar las preferencias escritas por el usuario.
 
-🎬 Generar explicaciones sobre por qué se recomienda una película.
+- Generar explicaciones sobre por qué se recomienda una película.
 
-🔎 Mejorar la búsqueda de películas a partir de descripciones.
+- Mejorar la búsqueda de películas a partir de descripciones.
 
-💡 Crear un sistema de interacción más natural con el usuario.
+- Crear un sistema de interacción más natural con el usuario.
 
 La implementación dependerá de las posibilidades que ofrezca la API y de su integración con el sistema de recomendación principal.
 
-🗄️ Fuente de datos
+**Fuente de datos**
 
 Los datos utilizados por el proyecto se obtendrán de:
 
-🎬 The Movie Database (TMDB)
+*The Movie Database (TMDB)*
 
 TMDB proporciona información sobre películas, series, actores, directores, géneros, imágenes y otros metadatos relacionados con contenido audiovisual.
 
@@ -100,7 +101,7 @@ La aplicación utilizará su API para obtener y consultar esta información.
 
 Este proyecto utiliza datos proporcionados por TMDB y debe cumplir las condiciones de uso y atribución establecidas por su API.
 
-🏗️ Arquitectura prevista
+**Arquitectura prevista**
 
 De forma general, el proyecto seguirá una arquitectura similar a:
 ```text
@@ -152,7 +153,7 @@ En una futura versión, la arquitectura podría incorporar:
        │ Recomendador │      │   TMDB API  │
        └──────────────┘      └─────────────┘
 
-📂 Estructura del proyecto
+- Estructura del proyecto:
 
 La estructura definitiva podrá cambiar a medida que avance el desarrollo, pero inicialmente se plantea algo similar a:
 
@@ -191,7 +192,7 @@ movie-recommender/
 ├── README.md
 └── run.py
 ```
-🚀 Instalación
+**Instalación**
 1. Clonar el repositorio
 git clone https://github.com/Proyectos-UE/Proyecto-infraestructura.git
 cd movie-recommender
@@ -218,7 +219,7 @@ La variable COHERE_API_KEY solamente será necesaria cuando se implemente la int
 
 Nunca se deben subir las claves de las APIs al repositorio.
 
-▶️ Ejecución
+**Ejecución**
 
 Una vez instaladas las dependencias y configuradas las variables de entorno:
 
@@ -227,11 +228,11 @@ python run.py
 
 Después, abrir la aplicación desde el navegador.
 
-🛣️ Roadmap
+Roadmap
 
 El proyecto se encuentra actualmente en desarrollo.
 
-🟢 Fase 1 — Planificación
+**Fase 1 — Planificación**
 
   - Definir la idea del proyecto
 
@@ -243,7 +244,7 @@ El proyecto se encuentra actualmente en desarrollo.
 
   - Determinar las variables que utilizará el recomendador
 
-🟡 Fase 2 — Obtención y preparación de datos
+**Fase 2 — Obtención y preparación de datos**
 
   - Conectar con la API de TMDB
 
@@ -255,7 +256,7 @@ El proyecto se encuentra actualmente en desarrollo.
 
  Transformar los datos para utilizarlos en el modelo
 
-🟡 Fase 3 — Sistema de recomendación
+**Fase 3 — Sistema de recomendación**
 
   - Estudiar diferentes algoritmos no supervisados
 
@@ -271,7 +272,7 @@ El proyecto se encuentra actualmente en desarrollo.
 
   - Implementar recomendaciones basadas en preferencias
 
-🟠 Fase 4 — Aplicación web
+**Fase 4 — Aplicación web**
 
   - Crear la interfaz principal
 
@@ -285,7 +286,7 @@ El proyecto se encuentra actualmente en desarrollo.
 
  - Mejorar el diseño y la experiencia de usuario
 
-🔵 Fase 5 — Inteligencia artificial
+**Fase 5 — Inteligencia artificial**
 
   - Investigar integración con Cohere
 
@@ -297,7 +298,7 @@ El proyecto se encuentra actualmente en desarrollo.
 
   - Evaluar la utilidad de la IA dentro del sistema
 
-🟣 Fase 6 — Mejoras
+**Fase 6 — Mejoras**
 
  - Optimizar el sistema de recomendación
 
@@ -311,7 +312,7 @@ El proyecto se encuentra actualmente en desarrollo.
 
   - Preparar el despliegue
 
-📊 Posibles criterios de recomendación
+**Posibles criterios de recomendación**
 
 Dependiendo de los datos disponibles y del modelo finalmente seleccionado, las recomendaciones podrían tener en cuenta diferentes características:
 
@@ -337,7 +338,7 @@ Dependiendo de los datos disponibles y del modelo finalmente seleccionado, las r
 
 La importancia de cada característica dependerá de los resultados obtenidos durante la fase de experimentación.
 
-🧪 Evaluación
+**Evaluación**
 
 Uno de los objetivos del proyecto será analizar la calidad de las recomendaciones obtenidas.
 
@@ -345,7 +346,7 @@ Para ello se estudiarán diferentes métricas y métodos de evaluación adecuado
 
 También se podrán realizar pruebas utilizando diferentes combinaciones de características para analizar cómo afectan a las recomendaciones.
 
-🔐 Seguridad
+**Seguridad**
 
 Las claves de las APIs se almacenarán mediante variables de entorno y no se incluirán directamente en el código fuente.
 
@@ -356,7 +357,7 @@ venv/
 __pycache__/
 *.pyc
 
-🤝 Contribución
+**Contribución**
 
 Para contribuir:
 
@@ -381,23 +382,23 @@ git push origin feature/nueva-funcionalidad
 
 6. Abre un Pull Request.
 
-📚 Tecnologías
+**Tecnologías**
 
-🐍 Python
+- Python
 
-🌐 HTML
+- HTML
 
-🎨 CSS
+- CSS
 
-🤖 Machine Learning — Aprendizaje no supervisado
+- Machine Learning — Aprendizaje no supervisado
 
-🎬 The Movie Database (TMDB) API
+- The Movie Database (TMDB) API
 
-🤖 Cohere API — planificado
+- Cohere API — planificado
 
-🧪 Testing — por definir
+- Testing — por definir
 
-👥 Equipo
+**Equipo**
 
 Proyecto desarrollado por:
 
@@ -409,10 +410,10 @@ Proyecto desarrollado por:
 
 - Iñigo Erce 
 
-🎬 Estado del proyecto:
+**Estado del proyecto:**
 
-🚧 En desarrollo
+*En desarrollo*
 
 El sistema de recomendación, la arquitectura definitiva y la integración con inteligencia artificial se encuentran todavía en fase de investigación y desarrollo.
 
-<p align="center"> 🎬 <strong>Movie Recommendation System</strong> <br> <sub>Encuentra tu próxima película favorita.</sub> </p>
+<p align="center"> <strong>Movie Recommendation System</strong> <br> <sub>Encuentra tu próxima película favorita.</sub> </p>
