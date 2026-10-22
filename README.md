@@ -333,7 +333,7 @@ Dependiendo de los datos disponibles y del modelo finalmente seleccionado, las r
                   └────────┬────────┘
                            │
                            ▼
-                 🎬 Películas similares
+                  Películas similares
 
 
 La importancia de cada característica dependerá de los resultados obtenidos durante la fase de experimentación.
